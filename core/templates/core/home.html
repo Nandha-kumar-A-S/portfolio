@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home - Portfolio{% endblock %}
+
+{% block content %}
+
+<!-- 🌌 Background Animation -->
+<div class="background-animation">
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+  <div class="clouds"></div>
+</div>
+
+<!-- 🚀 Hero Section -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>Hello, I'm <span class="highlight">Nandhakumar A S</span></h1>
+    <p class="typing">Python Full Stack Developer | Django Expert | Creator | Freelancer | Dream Builder</p>
+    <a href="{% url 'projects' %}" class="cta-button">🚀 View My Projects</a>
+  </div>
+</section>
+
+<!-- 👨‍💼 About Preview -->
+<section class="about-preview">
+  <div class="container">
+    <h2>👨‍💻 About Me</h2>
+    <p>I am a passionate Python full stack developer with deep interest in building scalable, aesthetic, and functional web applications using Django, JavaScript, and REST APIs. With hands-on experience across front-end and back-end, I aim to bridge creativity and logic in everything I build.</p>
+    <a href="{% url 'about' %}" class="btn-more">🔍 Learn More About Me</a>
+  </div>
+</section>
+
+<!-- 👤 Profile + Bio Section -->
+<section class="profile-section">
+  <div class="container profile-container">
+    <div class="profile-left">
+      <img src="{% static 'core/images/Nandhakumar.jpg' %}" alt="Nandhakumar A S" class="profile-img">
+    </div>
+    <div class="profile-right">
+      <h2>👨‍💼 About Nandhakumar A S</h2>
+      <p>
+        I’m a passionate Full Stack Developer from Cuddalore,Tamilnadu, India with strong knowledge in Django, JavaScript, APIs, and modern web development. I build responsive, user-centric applications that solve real-world problems.
+      </p>
+      <ul class="bio-info">
+        <li><strong>Location:</strong> Cuddalore,Tamilnadu, India</li>
+        <li><strong>Email:</strong> nandhakumar051004.com</li>
+        <li><strong>Phone:</strong> +91 8870252808</li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/Nandha-kumar-A-S" target="_blank">https://github.com/Nandha-kumar-A-S</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 📊 Skills -->
+<section class="skills-section">
+  <div class="container">
+    <h2>🧠 Technical Skills</h2>
+    <div class="skill-bar"><span>Python</span><div class="bar"><div class="fill" style="width: 95%;">95%</div></div></div>
+    <div class="skill-bar"><span>Django</span><div class="bar"><div class="fill" style="width: 90%;">90%</div></div></div>
+    <div class="skill-bar"><span>JavaScript</span><div class="bar"><div class="fill" style="width: 85%;">85%</div></div></div>
+    <div class="skill-bar"><span>HTML/CSS</span><div class="bar"><div class="fill" style="width: 88%;">88%</div></div></div>
+    <div class="skill-bar"><span>Flask</span><div class="bar"><div class="fill" style="width: 75%;">75%</div></div></div>
+    <div class="skill-bar"><span>SQL/SQLite</span><div class="bar"><div class="fill" style="width: 82%;">82%</div></div></div>
+    <div class="skill-bar"><span>Git & GitHub</span><div class="bar"><div class="fill" style="width: 90%;">90%</div></div></div>
+  </div>
+</section>
+
+<!-- 🎓 Education Section -->
+<section class="education-section">
+  <div class="container">
+    <h2>🎓 My Education</h2>
+    <div class="education-timeline">
+      <div class="edu-block">
+        <h3>Bachelor of Technology in Artificial Intelligence and Data Science</h3>
+        <p></p>
+        <span class="edu-year">2022 - 2026</span>
+      </div>
+      <div class="edu-block">
+        <h3>Higher Secondary Education</h3>
+        <p>St.Paul's Mat.Hr.Sec.School</p>
+        <span class="edu-year">2020- 2022</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🗓️ Timeline -->
+<section class="timeline-section">
+  <div class="container">
+    <h2>📅 My Journey</h2>
+    <div class="timeline">
+      <div class="event">
+        <h4>2025</h4>
+        <p>Developed professional-level Django applications. Built portfolio. Started freelancing.</p>
+      </div>
+      <div class="event">
+        <h4>2024</h4>
+        <p>Mastered backend with Django REST Framework and built real-time apps using WebSockets.</p>
+      </div>
+      <div class="event">
+        <h4>2023</h4>
+        <p>Learned Python, JavaScript, Flask. Built foundational apps. Started contributing to GitHub.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 📄 Resume -->
+<section class="resume-section">
+  <div class="container">
+    <h2 class="me">📄 Download My Resume</h2>
+    <p class="me">You can view and download my professional CV to know more about my skills, experience, and education.</p>
+    <a href="{% static 'core/files/Nandha kumar.pdf' %}" download class="btn-resume">⬇ Download Resume</a>
+  </div>
+</section>
+
+<!-- 💬 Contact CTA -->
+<section class="contact-cta">
+  <div class="container">
+    <h2>🤝 Let's Connect</h2>
+    <p>If you have a project in mind, a collaboration, or just want to say hi — feel free to reach out!</p>
+    <a href="{% url 'contact' %}" class="btn-contact">📬 Contact Me</a>
+  </div>
+</section>
+
+<!-- 🌐 Social -->
+<section class="social-links">
+  <div class="container">
+    <h2>🌐 Find Me Online</h2>
+    <div class="social-icons">
+      <a href="https://github.com/Nandha-kumar-A-S" target="_blank">🐙 GitHub</a>
+      <a href="https://www.linkedin.com/in/nandha-kumar-a-s-4578092a5" target="_blank">💼 LinkedIn</a>
+      <a href="mailto:nandhakumar051004@gmail.com">📧 Email</a>
+    </div>
+  </div>
+</section>
+
+<!-- 🔽 Scroll Animation -->
+<div class="scroll-down">
+  <span></span><span></span><span></span>
+</div>
+
+<!-- 🎉 Particles JS -->
+<div id="particles-js"></div>
+
+{% endblock %}

@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Nandhakumar A S | Python Full Stack Developer Portfolio">
+  <meta name="author" content="Nandhakumar A S">
+  <meta property="og:title" content="Nandhakumar A S Portfolio">
+  <meta property="og:description" content="Python Full Stack Developer | Django Expert | Freelancer">
+  <meta property="og:image" content="{% static 'core/images/og-preview.png' %}">
+  <meta name="theme-color" content="#101218">
+
+  <title>{% block title %}Portfolio{% endblock %}</title>
+  <link rel="icon" href="{% static 'core/images/favicon.png' %}" type="image/png">
+
+  <!-- 🌐 Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ✨ Core CSS -->
+<link rel="stylesheet" href="{% static 'core/css/base.css' %}">
+{% if request.path == '/' %}
+  <link rel="stylesheet" href="{% static 'core/css/home.css' %}">
+{% elif request.path == '/about/' %}
+  <link rel="stylesheet" href="{% static 'core/css/about.css' %}">
+{% elif request.path == '/projects/' %}
+  <link rel="stylesheet" href="{% static 'core/css/projects.css' %}">
+{% elif request.path == '/contact/' %}
+  <link rel="stylesheet" href="{% static 'core/css/contact.css' %}">
+{% endif %}
+
+</head>
+
+<body>
+  <!-- ⏳ Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- 🔝 Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="logo">Nandhakumar<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="{% static 'core/files/Nandha kumar.pdf' %}" download>Resume</a></li>
+        <li>
+          <button id="dark-toggle" class="dark-mode-toggle" title="Toggle Dark Mode">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🔽 Main Content -->
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- ⚓ Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Nandhakumar A S. Built with ❤️ using Django.</p>
+    <div class="social-footer">
+      <a href="https://github.com/Nandha-kumar-A-S" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/nandha-kumar-a-s-4578092a5" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:nandhakumar051004.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <!-- ✅ Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script defer src="{% static 'core/js/particles-config.js' %}"></script>
+  <script defer src="{% static 'core/js/scroll.js' %}"></script>
+  <script defer src="{% static 'core/js/darkmode-toggle.js' %}"></script>
+  <script defer src="{% static 'core/js/menu-toggle.js' %}"></script>
+
+  <!-- ✅ Loader & Scroll Reset -->
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
+    window.onbeforeunload = () => window.scrollTo(0, 0);
+  </script>
+</body>
+</html>

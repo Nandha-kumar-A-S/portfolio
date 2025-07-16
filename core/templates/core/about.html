@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About - Portfolio{% endblock %}
+{% block content %}
+
+<section class="about-section">
+  <div class="container">
+    <h2>👤 About Me</h2>
+    <p class="intro">
+      I'm <strong>Nandhakumar</strong>, a creative and enthusiastic Python Full Stack Developer from India 🇮🇳. I specialize in developing clean and scalable web applications using Django, REST APIs, and modern frontend tools.
+    </p>
+
+    <div class="about-grid">
+      <div class="profile-image">
+        <img src="{% static 'core/images/Nandhakumar.jpg' %}" alt="Nandhakumar A S">
+      </div>
+      <div class="profile-details">
+        <ul>
+          <li><strong>🎓 Qualification:</strong> B.Tech in Artificial Intelligence and Data Science</li>
+          <li><strong>📧 Email:</strong> nandhakumar051004@gmail.com</li>
+          <li><strong>📍 Location:</strong> Cuddalore, Tamil Nadu, India</li>
+          <li><strong>💼 Freelance:</strong> Available</li>
+          <li><strong>📁 GitHub:</strong> <a href="https://github.com/Nandha-kumar-A-S" target="_blank">https://github.com/Nandha-kumar-A-S</a></li>
+          <li><strong>💼 LinkedIn:</strong> <a href="https://www.linkedin.com/in/nandha-kumar-a-s-4578092a5" target="_blank">linkedin.com/in/Nandhakumar</a></li>
+        </ul>
+        <a href="{% static 'core/files/Nandha kumar.pdf' %}" class="btn-resume" download>📄 Download My CV</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <h3>🛠️ Tools & Technologies</h3>
+    <div class="skills">
+      <div class="skill">Python</div>
+      <div class="skill">Django</div>
+      <div class="skill">Flask</div>
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">SQLite</div>
+      <div class="skill">Git/GitHub</div>
+      <div class="skill">Bootstrap</div>
+      <div class="skill">REST API</div>
+    </div>
+
+    <hr>
+
+    <h3>📜 My Journey</h3>
+    <div class="timeline">
+      <div class="event">
+        <h4> 2025 – Present</h4>
+        <p>Building advanced real-time web apps using Django + WebSocket. Created this portfolio as a creative identity.</p>
+      </div>
+      <div class="event">
+        <h4> 2024</h4>
+        <p>Mastered Django, Flask, DRF, and created full-featured personal and freelance projects.</p>
+      </div>
+      <div class="event">
+        <h4> 2023</h4>
+        <p>Started with Python, built mini projects, explored frontend basics and GitHub.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <h3>🚀 Career Goals</h3>
+    <ul class="goals">
+      <li>🌐 Build SaaS products with Django</li>
+      <li>👨‍🏫 Teach coding on YouTube</li>
+      <li>🌍 Contribute to open-source</li>
+      <li>🎯 Join a product-based tech company</li>
+      <li>💡 Start a tech startup</li>
+    </ul>
+
+    <div class="quote">
+      <p><i class="fas fa-quote-left"></i> Keep building. Keep dreaming. Your lines of code might change the world. <i class="fas fa-quote-right"></i></p>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
