@@ -1,0 +1,140 @@
+/* ------------------------- Contact Page ------------------------- */
+
+.contact-section {
+  background-color: #0e1117;
+  color: #fff;
+  padding: 80px 20px;
+  min-height: 100vh;
+}
+
+.contact-section .section-title {
+  font-size: 2.5rem;
+  color: #00bcd4;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-section .section-subtitle {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  align-items: start;
+}
+
+.contact-form {
+  background: #1b1f27;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.1);
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #aaa;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid #2c2f3a;
+  border-radius: 8px;
+  background-color: #101218;
+  color: #fff;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form .focus {
+  border-color: #00bcd4;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .btn {
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s;
+}
+
+.contact-form .btn:hover {
+  background-color: #0097a7;
+}
+
+.contact-details {
+  background: #1b1f27;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.1);
+}
+
+.contact-details h3 {
+  color: #00bcd4;
+  margin-bottom: 5px;
+}
+
+.contact-details p,
+.contact-details a {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  color: #00bcd4;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 1.4rem;
+}
+
+.social-icons a {
+  color: #00bcd4;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-section .section-title {
+    font-size: 2rem;
+  }
+}

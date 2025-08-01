@@ -1,0 +1,445 @@
+/* 🌌 Background Animation */
+.background-animation .stars,
+.background-animation .twinkling,
+.background-animation .clouds {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* 🚀 Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 100px 20px 80px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+.hero-section .hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.hero-section .hero-content .highlight {
+  color: #00bcd4;
+}
+
+.hero-section .typing {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 25px;
+  animation: typing 3s steps(40, end) infinite;
+}
+
+.cta-button {
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0097a7;
+}
+
+/* 👨‍💼 About Preview */
+.about-preview {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-preview h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-preview p {
+  max-width: 700px;
+  margin: auto;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn-more {
+  background: #00bcd4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.btn-more:hover {
+  background-color: #007c91;
+}
+
+/* 👤 Profile + Bio */
+.profile-section {
+  background: #f8f9fa;
+  padding: 60px 20px;
+}
+
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.profile-left {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #00bcd4;
+}
+
+.profile-right {
+  flex: 2;
+}
+
+.profile-right h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+.profile-right p{
+  color:black;
+}
+
+.bio-info {
+  list-style: none;
+  padding-left: 0;
+  color:black;
+}
+
+.bio-info li {
+  margin: 5px 0;
+  font-weight: 500;
+  color:black;
+}
+
+/* 📊 Skills */
+.skills-section {
+  padding: 60px 20px;
+  background-color: #101218;
+  color: white;
+}
+
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #00bcd4;
+}
+
+.skill-bar {
+  margin: 15px 0;
+}
+
+.skill-bar span {
+  font-weight: bold;
+}
+
+.bar {
+  width: 100%;
+  height: 10px;
+  background-color: #2c2f3a;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.fill {
+  height: 100%;
+  background-color: #00bcd4;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.75rem;
+  text-align: right;
+  padding-right: 5px;
+}
+
+/* 🎓 Education */
+.education-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  color: #333;
+}
+
+.education-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.education-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edu-block {
+  background: #f0f0f0;
+  padding: 20px;
+  border-left: 4px solid #00bcd4;
+  border-radius: 5px;
+}
+
+.edu-block h3 {
+  margin-bottom: 5px;
+}
+
+.edu-year {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* 🗓️ Timeline */
+.timeline-section {
+  background: #101218;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.timeline-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00bcd4;
+}
+
+.timeline .event {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 3px solid #00bcd4;
+}
+
+/* 📄 Resume Download */
+
+.me{
+  color:black;
+}
+
+.resume-section {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.btn-resume {
+  display: inline-block;
+  background: #00bcd4;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.btn-resume:hover {
+  background-color: #0097a7;
+}
+
+/* 💬 Contact CTA */
+.contact-cta {
+  background-color: #101218;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-cta .btn-contact {
+  margin-top: 20px;
+  background: #00bcd4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.contact-cta .btn-contact:hover {
+  background-color: #007c91;
+}
+
+/* 🌐 Social Links */
+.social-links {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.social-links h2 {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #00bcd4;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007c91;
+}
+
+/* 🔽 Scroll Down Animation */
+.scroll-down {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.scroll-down span {
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin: 6px auto;
+  border-radius: 50%;
+  background: #00bcd4;
+  animation: scrollAnim 1.5s infinite;
+}
+
+.scroll-down span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.scroll-down span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes scrollAnim {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(5px);
+  }
+}
+
+/* Typing Animation (optional) */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-right {
+    margin-top: 20px;
+  }
+}
+
+.me{
+  color:black;
+}
+
+/* Scroll animation, fade-ins */
+.fade-in { animation: fadeIn 2s ease-in; }
+.fade-in-up { animation: fadeInUp 2s ease-in; }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Pulse effect */
+.pulse {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Shimmer effect */
+.shimmer {
+  background: linear-gradient(90deg, #fff 25%, #f0f0f0 50%, #fff 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite linear;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Shine on buttons */
+.shine {
+  position: relative;
+  overflow: hidden;
+}
+.shine::after {
+  content: "";
+  position: absolute;
+  top: 0; left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.3), rgba(255,255,255,0));
+  animation: shine 2s infinite;
+}
+@keyframes shine {
+  100% { left: 125%; }
+}
+.hero-section, .about-preview, .profile-section, .skills-section, .education-section,
+.timeline-section, .resume-section, .contact-cta, .social-links {
+  padding: 60px 0;
+  border-bottom: 1px solid #eee;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p, li {
+  color: #555;
+}
+
+.cta-button, .btn-more, .btn-contact, .btn-resume {
+  background: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover, .btn-more:hover, .btn-contact:hover, .btn-resume:hover {
+  background: #003e80;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
